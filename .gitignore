@@ -1,4 +1,4 @@
 #faces directory
-.cache/faces/**
+**/faces/**
 
-encodings/**
+**/encodings/**
