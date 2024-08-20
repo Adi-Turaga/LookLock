@@ -2,4 +2,6 @@
 
 Software for a face recognition car security system called LookLock
 
-If cloned, add an encodings/ directory and a .cache/faces directory. In the encodings directory, add a faces.dat file for all the face data.
+If cloned, run the setup.sh script--it will setup the directory.
+
+A face must be added before attempting to use the recognize feature, otherwise the face recognition code will return an error stating that there is no input.
