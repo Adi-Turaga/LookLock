@@ -1,0 +1,4 @@
+#faces directory
+.cache/faces/**
+
+encodings/**
