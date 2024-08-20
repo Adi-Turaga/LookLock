@@ -2,14 +2,15 @@ import LookLock
 from LookLock import Encoder, Recognizer, Gui
 import cv2
 import os
+import pwd
 
 # recognition variables
-encodings_file = "/home/adi/LookLock/encodings/faces.dat"
+encodings_file = "/home/{}/LookLock/encodings/faces.dat".format(pwd.getpwuid(os.getuid())[0])
 detection_method = "hog"
 channel = 0
 
 # encoding variables
-faces_db = "/home/adi/LookLock/.cache/faces/"
+faces_db = "/home/{}/LookLock/.cache/faces/".format(pwd.getpwuid(os.getuid()))[0]
 num_pics = 6
 
 vid = cv2.VideoCapture(channel)
