@@ -3,3 +3,6 @@
 
 # encodings directory
 **/encodings/**
+
+# pycache that comes from Python module creation
+**/__pycache__/**
